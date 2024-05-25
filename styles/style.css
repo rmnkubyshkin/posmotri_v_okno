@@ -24,12 +24,16 @@ html {
 } 
 
 .page {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: var(--main-bg-color);
   inline-size: 1200px;
+  height: 800px;
 }
 
 h1,
