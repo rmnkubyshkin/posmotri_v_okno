@@ -1,0 +1,125 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+.content {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 2fr 1.122fr;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-content: last baseline;
+  column-gap: 30px;
+  width: 100%;
+  padding-inline-start: 31px;
+  padding-inline-end: 31px;
+  padding-block-start: 133px;
+}
+
+.content__details {
+  position: relative;
+  display: grid;
+  min-height: 100%;
+}
+
+.title {
+  margin-block-start: 2px;
+  margin-block-end: 26px;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70.5px;
+  text-transform: uppercase;
+}
+
+.content__list {
+  position: relative;
+  max-height: 435px;
+  overflow-y: scroll;
+}
+
+.content__video-card-description-container {
+  min-width: 200px;
+}
+
+.content__video-card {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: last baseline;
+}
+
+.content__card-link {
+  display: block;
+  margin-inline: 2px;
+  margin-block: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  padding-inline-start: 2px;
+  padding-block: 0px 2px;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: var(--accent-color);
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70.5px;
+}
+
+.content__video-card-description {
+  padding-block: 2px 2px;
+  padding-block-start: 6px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.content__video-card-thumbnail {
+  min-width: 194px;;
+  max-height: 103px;
+}
+
+.content__list-item {
+  margin-block-end: 34px;
+} 
+
+.content__list-item:last-child {
+  margin-block-end: 0;
+}
+
+.content__card-link_current:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  cursor: pointer;
+}
+
+.content__card-link:focus {
+  outline: 0;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  background-color: none;
+}

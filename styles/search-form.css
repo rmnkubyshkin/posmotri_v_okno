@@ -1,0 +1,125 @@
+.search-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  column-gap: 38px;
+}
+
+.search-form__fieldset {
+  margin-block-start: 3px;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 18px;
+  padding-block-start: 2px;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-block-start: 5px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  border-bottom: 1px solid #fff;
+}
+
+.search-form__label:hover {
+  cursor: pointer;
+}
+.search-form__label-text {
+  margin-inline-start: 3px;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background-color: none;
+}
+
+.search-form__submit-button {
+  margin-block-start: 22px;
+  padding-inline-start: 75px;
+  padding-inline-end: 75px;
+}
+
+.search-form__pseudo-checkbox:active {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  border: 1px solid var(--main-bg-color);
+  border: 1px solid #fff;
+  border-width: 4px;
+  border-style: double; 
+  outline: 2px solid var(--main-bg-color);
+  outline-offset: -3px;
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked + span {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  border: 1px solid var(--main-bg-color);
+  border: 1px solid #fff;
+  border-width: 4px;
+  border-style: double; 
+  outline: 2px solid var(--main-bg-color);
+  outline-offset: -3px;
+  background-color: #fff;
+}
+
+.search-form__textfield{
+  display: flex;
+  width: 225px;
+  margin-block-start: 1px;
+  border: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-inline-start: 0px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Fira Sans Condensed", serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  background: none;
+  appearance: none;
+}
+
+.search-form__textfield:active {
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  outline: 1px solid #fff;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  background-color: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 0;
+}
+
+.search-form__textfield:focus {
+  outline: 0;
+}
+
+.search-form__textfield:hover {
+  cursor: text;
+}

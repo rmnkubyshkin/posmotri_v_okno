@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #545050;
+  background-color: var(--accent-color);
 }
 
 .error__title {

@@ -1,0 +1,38 @@
+.button {
+  height: 35px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Fira Sans Condensed", serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  text-align: center;
+  background-color: var(--main-bg-color);
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:active {
+  background-color: var(--accent-color);
+}
+
+.button:focus-visible { 
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+  background-color: none;
+}
+
+.button:hover {
+  display:inline-block;
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+.more-button {
+  width: 100%;
+  padding-inline-start: 75px;
+  padding-inline-end: 74px;
+}
