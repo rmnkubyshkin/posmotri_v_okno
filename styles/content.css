@@ -1,13 +1,10 @@
-
 .content {
   display: flex;
-  flex-wrap: nowrap;
-  align-self: last baseline;
   flex-direction: row;
-  /* grid-template-columns: 2fr 1.122fr;
-  grid-auto-flow: column; */
+  flex-wrap: nowrap;
   justify-content: space-between;
   column-gap: 30px;
+  align-self: last baseline;
   width: 100%;
   padding-inline-start: 31px;
   padding-inline-end: 31px;
