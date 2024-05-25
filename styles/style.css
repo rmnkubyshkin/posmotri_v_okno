@@ -13,6 +13,16 @@ html {
   block-size: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
 .page {
   margin: auto;
   color: #fff;
@@ -21,7 +31,6 @@ html {
   background-color: var(--main-bg-color);
   inline-size: 1200px;
   block-size: 100%;
-  max-height: 800px;
 }
 
 h1,
