@@ -9,6 +9,7 @@
   width: 100%;
   padding-inline-start: 31px;
   padding-inline-end: 31px;
+  padding-block-start: 70px;
 }
 
 .content__details {
