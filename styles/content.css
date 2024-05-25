@@ -1,15 +1,17 @@
 
 .content {
-  display: grid;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: last baseline;
   flex-direction: row;
-  grid-template-columns: 2fr 1.122fr;
-  grid-auto-flow: column;
+  /* grid-template-columns: 2fr 1.122fr;
+  grid-auto-flow: column; */
   justify-content: space-between;
   column-gap: 30px;
   width: 100%;
   padding-inline-start: 31px;
   padding-inline-end: 31px;
-  padding-block-start: 70px;
+  padding-block-start: 133px;
 }
 
 .content__details {
