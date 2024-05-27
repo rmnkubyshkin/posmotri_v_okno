@@ -2,87 +2,102 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   column-gap: 30px;
   align-self: last baseline;
-  width: 100%;
   padding-inline-start: 31px;
   padding-inline-end: 31px;
-  padding-block-start: 133px;
+  inline-size: 100%;
 }
 
 .content__details {
-  position: relative;
   display: grid;
-  min-height: 100%;
+  justify-content: start;
+  block-size: 100%;
 }
 
 .title {
   margin-block-start: 2px;
-  margin-block-end: 26px;
-  font-family: Oswald;
+  margin-block-end: 20px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 70.5px;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
 .content__list {
   position: relative;
-  max-height: 298px;
-  overflow-y: scroll;
+  padding-inline: 2px;
+  padding-block-end: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-block-size: 298px;
+
+}
+.content__list::-webkit-scrollbar {
+  inline-size: 4px;
+}
+
+.content__list::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .content__video-card-description-container {
-  min-width: 200px;
+  padding-inline-start: 2px;
+  padding-block-end: 2px;
+  inline-size: 196px;
+}
+
+.content__video-card-title {
+  padding-block-start: 2px;
+  overflow: hidden;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-inline-size: 200px;
+}
+
+.content__video-card-description {
+  padding-block-start: 6px;
+  object-fit: cover;
+  font-family: 'Fira Sans Condensed', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 0.9;
+  text-transform: capitalize;
 }
 
 .content__video-card {
   display: grid;
   grid-auto-flow: column;
-  justify-content: last baseline;
+  justify-content: space-between;
 }
 
 .content__card-link {
   display: block;
-  margin-inline: 2px;
-  margin-block: 2px;
-  color: #fff;
+  padding-inline: 2px;
+  padding-block-start: 2px;
+  padding-block-end: 3px;
+  color: var(--secondary-color);
   text-decoration: none;
-}
-
-.content__video-card-title {
-  padding-inline-start: 2px;
-  padding-block: 0px 2px;
-  font-family: Oswald;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
-  text-align: left;
-  text-transform: uppercase;
 }
 
 .content__accent {
   color: var(--accent-color);
-  font-family: Oswald;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 70.5px;
-}
-
-.content__video-card-description {
-  padding-block: 2px 2px;
-  padding-block-start: 6px;
-  font-family: 'Fira Sans Condensed';
-  font-size: 18px;
-  line-height: 16px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
 .content__video-card-thumbnail {
-  min-width: 194px;;
-  max-height: 103px;
+  display: block;
+  padding-inline-start: 3px;
+  object-position: top right;
+  inline-size: 194px;;
+  block-size: 103px;
 }
 
 .content__list-item {
@@ -93,8 +108,12 @@
   margin-block-end: 0;
 }
 
-.content__card-link_current:focus {
-  background-color: rgba(255, 255, 255, 0.2);
+.content__card-link_current {
+  background-color: var(--accent-color);
+}
+
+.content__card-link:active {
+  background-color: var(--accent-color);
 }
 
 .content__card-link:hover {
@@ -104,11 +123,11 @@
 }
 
 .content__card-link:focus {
-  outline: 0;
+  outline: none;
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid var(--secondary-color);
   outline-offset: 1px;
-  background-color: none;
+  background-color: transparent;
 }
