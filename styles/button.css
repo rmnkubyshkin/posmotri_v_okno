@@ -24,7 +24,6 @@
 .button:focus-visible { 
   outline: 1px solid var(--secondary-color);
   outline-offset: 1px;
-  background-color: transparent;
 }
 
 .button:hover {
@@ -33,6 +32,6 @@
 
 .more-button {
   padding-inline-start: 75px;
-  padding-inline-end: 74px;
+  padding-inline-end: 75px;
   inline-size: 100%;
 }
